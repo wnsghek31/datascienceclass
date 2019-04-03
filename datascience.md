@@ -35,7 +35,7 @@
 이산 확률 변수에서 특정값에 대한 확률을 나타내는 함수.
 
 
-(결합 주변확률분포)
+![](https://github.com/wnsghek31/datascienceclass/blob/master/gyul.PNG)
 
 ### 결합 확률 분포
 두개 이상의 확률변수가 관련된 확률분포
@@ -80,7 +80,8 @@ P(B|A) : 사건 A라는 증거에 대한 사후 확률(posterior probability) - 
 ☞ 사후확률(posterior probability): p(x|z), 사건이 발생한 후(관측이 진행된 후) 그 사건이 특정 모델에서 발생했을 확률
 
 
-(베이즈 사진)
+![](https://github.com/wnsghek31/datascienceclass/blob/master/bay.PNG)
+
 
 
 
@@ -101,7 +102,8 @@ Choose value that is most probable given observed data and prior belief
 
 ML과 MAP의 차이는 남녀의 성비를 고려하면 명확해짐 만일 인구의 90%가 남자고 여자는 10% 밖에 없다고 하자. **ML은 남녀의 성비는 완전히 무시하고 순수하게 남자중에서 해당 길이의 머리카락을 가질 확률, 여자중에서 해당 길이의 머리카락을 가질 확률만을 비교하는 것**이고 , ** MAP는 각각의 성에서 해당 머리카락이 나올 확률 뿐만 아니라 남녀의 성비까지 고려하여 최종 클래스를 결정하는 방법**
 
-(MAP 사진)
+![](https://github.com/wnsghek31/datascienceclass/blob/master/MAP.PNG)
+
 
 ML보다는 MAP 방법이 보다 정확한 classification 방법임을 알 수 있다. 하지만 많은 경우, 사전확률(prior probability)인 p(남), p(여)를 모르는 경우가 대부분이기 때문에 단순하게 p(남) = p(여)로 놓고 문제를 푸는 경우가 많은데, 이 경우 MAP는 ML과 같게 된다.
 
@@ -138,7 +140,8 @@ n x n 정방행렬(고유값, 고유벡터는 정방행렬에 대해서만 정�
 ### PCA (Principle Component Analysis)
 PCA는 분포된 데이터들의 주성분(Principal Component)를 찾아주는 방법
 
-(PCA 사진)
+![](https://github.com/wnsghek31/datascienceclass/blob/master/pca.PNG)
+
 
 이 데이터들의 분포 특성을 2개의 벡터로 가장 잘 설명할 수 있는 방법은 무엇일까? 그건 바로, 그림에서와 같이 e1, e2 두 개의 벡터로 데이터 분포를 설명하는 것이다. e1의 방향과 크기, 그리고 e2의 방향과 크기를 알면 이 데이터 분포가 어떤 형태인지를 가장 단순하면서도 효과적으로 파악할 수 있다.
 PCA는 데이터 하나하나에 대한 성분을 분석하는게 아니라 여러 데이터들이 모여 하나의 분포를 이룰때 이 분포의 주성분을 분석하는 방법
@@ -171,15 +174,16 @@ PCA란 한마다로 말하면 입력 데이터들의 공분산 행렬(covariance
 이 때 나오는 고유벡터가 주성분 벡터로서 데이터의 분포에서 분산이 큰 방향을 나타내고, 대응되는 고유값(eigenvalue)이 그 분산의 크기를 나타냄
 첫번째 주성분 벡터 e1은 데이터들의 분산이 가장 큰 방향을 나타낸
 
-(PCA 계산과정)
+![](https://github.com/wnsghek31/datascienceclass/blob/master/pca.PNG)
+
 
 
 #### SVD (Singular Value Decomposition)
 
 특이값 분해(SVD)는 고유값 분해(eigendecomposition)처럼 행렬을 대각화하는 한 방법
  특이값 분해가 유용한 이유는 행렬이 정방행렬이든 아니든 관계없이 모든 m x n 행렬에 대해 적용 가능하기 때문 (고유값 분해(EVD)는 정방행렬에 대해서만 적용 가능하며 또한 정방행렬 중에서도 일부 행렬에 대해서만 적용 가능한 대각화 방법)
+![](https://github.com/wnsghek31/datascienceclass/blob/master/svd.PNG)
 
-(SVD 사진)
 
 U는 AA^T를 고유값분해 해서 얻어진 직교행렬로 U의 열벡터들을 A의 left singular vector라부른다.
 V는 A^TA를 고유값분해해서 얻어진 직교행렬로서 V 의 열벡터들을 A의 right singular vector
